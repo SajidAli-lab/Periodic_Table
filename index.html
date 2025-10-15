@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Periodic Table</title>
-  <meta name="description" content="Periodic table of chemical elements implemented using an HTML table">
-  <style>
-    main{
-        margin: 20px;
-    }
-    table{
-        font-size: 11.7px;
-    }
-  </style>
+  <meta name="description" content="Periodic table of chemical elements implemented using an HTML table and CSS">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
+
+<body>
   <main>
     <h1 style="text-align: center;">Periodic Table of Elements</h1>
 
     <table border="1" cellpadding="4" cellspacing="0">
-        <caption>Periodic Table of Elements — Using HTML</caption>
+      <caption>Periodic Table of Elements — Using HTML & CSS</caption>
       <!-- Group table headers -->
       <tr>
         <th></th>
@@ -46,133 +41,133 @@
       <!-- Period 1 -->
       <tr>
         <th>Period 1</th>
-        <td title="Hydrogen (1)"><strong>1</strong><br/>H<br/>Hydrogen</td>
+        <td title="Hydrogen (1)" class="h-1"><strong>1</strong><br />H<br />Hydrogen</td>
         <!-- empty cells 2-17 -->
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        <td title="Helium (2)"><strong>2</strong><br/>He<br/>Helium</td>
+        <td colspan="16"></td>
+        <td title="Helium (2)" class="g3"><strong>2</strong><br />He<br />Helium</td>
       </tr>
 
-      
+
       <!-- Period 2 -->
       <tr>
         <th>Period 2</th>
-        <td title="Lithium (3)"><strong>3</strong><br/>Li<br/>Lithium</td>
-        <td title="Beryllium (4)"><strong>4</strong><br/>Be<br/>Beryllium</td>
+        <td title="Lithium (3)" class="g1"><strong>3</strong><br />Li<br />Lithium</td>
+        <td title="Beryllium (4)" class="g2"><strong>4</strong><br />Be<br />Beryllium</td>
         <!-- groups 3-12 empty -->
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        <td title="Boron (5)"><strong>5</strong><br/>B<br/>Boron</td>
-        <td title="Carbon (6)"><strong>6</strong><br/>C<br/>Carbon</td>
-        <td title="Nitrogen (7)"><strong>7</strong><br/>N<br/>Nitrogen</td>
-        <td title="Oxygen (8)"><strong>8</strong><br/>O<br/>Oxygen</td>
-        <td title="Fluorine (9)"><strong>9</strong><br/>F<br/>Fluorine</td>
-        <td title="Neon (10)"><strong>10</strong><br/>Ne<br/>Neon</td>
+        <td colspan="10"></td>
+        <td title="Boron (5)" class="g6"><strong>5</strong><br />B<br />Boron</td>
+        <td title="Carbon (6)" class="g5"><strong>6</strong><br />C<br />Carbon</td>
+        <td title="Nitrogen (7)" class="g5"><strong>7</strong><br />N<br />Nitrogen</td>
+        <td title="Oxygen (8)" class="g5"><strong>8</strong><br />O<br />Oxygen</td>
+        <td title="Fluorine (9)" class="g5"><strong>9</strong><br />F<br />Fluorine</td>
+        <td title="Neon (10)" class="g3"><strong>10</strong><br />Ne<br />Neon</td>
       </tr>
 
       <!-- Period 3 -->
       <tr>
         <th>Period 3</th>
-        <td title="Sodium (11)"><strong>11</strong><br/>Na<br/>Sodium</td>
-        <td title="Magnesium (12)"><strong>12</strong><br/>Mg<br/>Magnesium</td>
+        <td title="Sodium (11)" class="g1"><strong>11</strong><br />Na<br />Sodium</td>
+        <td title="Magnesium (12)" class="g2"><strong>12</strong><br />Mg<br />Magnesium</td>
         <!-- groups 3-12 empty -->
-        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        <td title="Aluminium (13)"><strong>13</strong><br/>Al<br/>Aluminium</td>
-        <td title="Silicon (14)"><strong>14</strong><br/>Si<br/>Silicon</td>
-        <td title="Phosphorus (15)"><strong>15</strong><br/>P<br/>Phosphorus</td>
-        <td title="Sulfur (16)"><strong>16</strong><br/>S<br/>Sulfur</td>
-        <td title="Chlorine (17)"><strong>17</strong><br/>Cl<br/>Chlorine</td>
-        <td title="Argon (18)"><strong>18</strong><br/>Ar<br/>Argon</td>
+        <td colspan="10"></td>
+        <td title="Aluminium (13)" class="g7"><strong>13</strong><br />Al<br />Aluminium</td>
+        <td title="Silicon (14)" class="g6"><strong>14</strong><br />Si<br />Silicon</td>
+        <td title="Phosphorus (15)" class="g5"><strong>15</strong><br />P<br />Phosphorus</td>
+        <td title="Sulfur (16)" class="g5"><strong>16</strong><br />S<br />Sulfur</td>
+        <td title="Chlorine (17)" class="g5"><strong>17</strong><br />Cl<br />Chlorine</td>
+        <td title="Argon (18)" class="g3"><strong>18</strong><br />Ar<br />Argon</td>
       </tr>
 
       <!-- Period 4 -->
       <tr>
         <th>Period 4</th>
-        <td title="Potassium (19)"><strong>19</strong><br/>K<br/>Potassium</td>
-        <td title="Calcium (20)"><strong>20</strong><br/>Ca<br/>Calcium</td>
-        <td title="Scandium (21)"><strong>21</strong><br/>Sc<br/>Scandium</td>
-        <td title="Titanium (22)"><strong>22</strong><br/>Ti<br/>Titanium</td>
-        <td title="Vanadium (23)"><strong>23</strong><br/>V<br/>Vanadium</td>
-        <td title="Chromium (24)"><strong>24</strong><br/>Cr<br/>Chromium</td>
-        <td title="Manganese (25)"><strong>25</strong><br/>Mn<br/>Manganese</td>
-        <td title="Iron (26)"><strong>26</strong><br/>Fe<br/>Iron</td>
-        <td title="Cobalt (27)"><strong>27</strong><br/>Co<br/>Cobalt</td>
-        <td title="Nickel (28)"><strong>28</strong><br/>Ni<br/>Nickel</td>
-        <td title="Copper (29)"><strong>29</strong><br/>Cu<br/>Copper</td>
-        <td title="Zinc (30)"><strong>30</strong><br/>Zn<br/>Zinc</td>
-        <td title="Gallium (31)"><strong>31</strong><br/>Ga<br/>Gallium</td>
-        <td title="Germanium (32)"><strong>32</strong><br/>Ge<br/>Germanium</td>
-        <td title="Arsenic (33)"><strong>33</strong><br/>As<br/>Arsenic</td>
-        <td title="Selenium (34)"><strong>34</strong><br/>Se<br/>Selenium</td>
-        <td title="Bromine (35)"><strong>35</strong><br/>Br<br/>Bromine</td>
-        <td title="Krypton (36)"><strong>36</strong><br/>Kr<br/>Krypton</td>
+        <td title="Potassium (19)" class="g1"><strong>19</strong><br />K<br />Potassium</td>
+        <td title="Calcium (20)" class="g2"><strong>20</strong><br />Ca<br />Calcium</td>
+        <td title="Scandium (21)" class="g4"><strong>21</strong><br />Sc<br />Scandium</td>
+        <td title="Titanium (22)" class="g4"><strong>22</strong><br />Ti<br />Titanium</td>
+        <td title="Vanadium (23)" class="g4"><strong>23</strong><br />V<br />Vanadium</td>
+        <td title="Chromium (24)" class="g4"><strong>24</strong><br />Cr<br />Chromium</td>
+        <td title="Manganese (25)" class="g4"><strong>25</strong><br />Mn<br />Manganese</td>
+        <td title="Iron (26)" class="g4"><strong>26</strong><br />Fe<br />Iron</td>
+        <td title="Cobalt (27)" class="g4"><strong>27</strong><br />Co<br />Cobalt</td>
+        <td title="Nickel (28)" class="g4"><strong>28</strong><br />Ni<br />Nickel</td>
+        <td title="Copper (29)" class="g4"><strong>29</strong><br />Cu<br />Copper</td>
+        <td title="Zinc (30)" class="g7"><strong>30</strong><br />Zn<br />Zinc</td>
+        <td title="Gallium (31)" class="g7"><strong>31</strong><br />Ga<br />Gallium</td>
+        <td title="Germanium (32)" class="g6"><strong>32</strong><br />Ge<br />Germanium</td>
+        <td title="Arsenic (33)" class="g6"><strong>33</strong><br />As<br />Arsenic</td>
+        <td title="Selenium (34)" class="g5"><strong>34</strong><br />Se<br />Selenium</td>
+        <td title="Bromine (35)" class="g5"><strong>35</strong><br />Br<br />Bromine</td>
+        <td title="Krypton (36)" class="g3"><strong>36</strong><br />Kr<br />Krypton</td>
       </tr>
 
       <!-- Period 5 -->
       <tr>
         <th>Period 5</th>
-        <td title="Rubidium (37)"><strong>37</strong><br/>Rb<br/>Rubidium</td>
-        <td title="Strontium (38)"><strong>38</strong><br/>Sr<br/>Strontium</td>
-        <td title="Yttrium (39)"><strong>39</strong><br/>Y<br/>Yttrium</td>
-        <td title="Zirconium (40)"><strong>40</strong><br/>Zr<br/>Zirconium</td>
-        <td title="Niobium (41)"><strong>41</strong><br/>Nb<br/>Niobium</td>
-        <td title="Molybdenum (42)"><strong>42</strong><br/>Mo<br/>Molybdenum</td>
-        <td title="Technetium (43)"><strong>43</strong><br/>Tc<br/>Technetium</td>
-        <td title="Ruthenium (44)"><strong>44</strong><br/>Ru<br/>Ruthenium</td>
-        <td title="Rhodium (45)"><strong>45</strong><br/>Rh<br/>Rhodium</td>
-        <td title="Palladium (46)"><strong>46</strong><br/>Pd<br/>Palladium</td>
-        <td title="Silver (47)"><strong>47</strong><br/>Ag<br/>Silver</td>
-        <td title="Cadmium (48)"><strong>48</strong><br/>Cd<br/>Cadmium</td>
-        <td title="Indium (49)"><strong>49</strong><br/>In<br/>Indium</td>
-        <td title="Tin (50)"><strong>50</strong><br/>Sn<br/>Tin</td>
-        <td title="Antimony (51)"><strong>51</strong><br/>Sb<br/>Antimony</td>
-        <td title="Tellurium (52)"><strong>52</strong><br/>Te<br/>Tellurium</td>
-        <td title="Iodine (53)"><strong>53</strong><br/>I<br/>Iodine</td>
-        <td title="Xenon (54)"><strong>54</strong><br/>Xe<br/>Xenon</td>
+        <td title="Rubidium (37)" class="g1"><strong>37</strong><br />Rb<br />Rubidium</td>
+        <td title="Strontium (38)" class="g2"><strong>38</strong><br />Sr<br />Strontium</td>
+        <td title="Yttrium (39)" class="g4"><strong>39</strong><br />Y<br />Yttrium</td>
+        <td title="Zirconium (40)" class="g4"><strong>40</strong><br />Zr<br />Zirconium</td>
+        <td title="Niobium (41)" class="g4"><strong>41</strong><br />Nb<br />Niobium</td>
+        <td title="Molybdenum (42)" class="g4"><strong>42</strong><br />Mo<br />Molybdenum</td>
+        <td title="Technetium (43)" class="g4"><strong>43</strong><br />Tc<br />Technetium</td>
+        <td title="Ruthenium (44)" class="g4"><strong>44</strong><br />Ru<br />Ruthenium</td>
+        <td title="Rhodium (45)" class="g4"><strong>45</strong><br />Rh<br />Rhodium</td>
+        <td title="Palladium (46)" class="g4"><strong>46</strong><br />Pd<br />Palladium</td>
+        <td title="Silver (47)" class="g4"><strong>47</strong><br />Ag<br />Silver</td>
+        <td title="Cadmium (48)" class="g7"><strong>48</strong><br />Cd<br />Cadmium</td>
+        <td title="Indium (49)" class="g7"><strong>49</strong><br />In<br />Indium</td>
+        <td title="Tin (50)" class="g7"><strong>50</strong><br />Sn<br />Tin</td>
+        <td title="Antimony (51)" class="g6"><strong>51</strong><br />Sb<br />Antimony</td>
+        <td title="Tellurium (52)" class="g6"><strong>52</strong><br />Te<br />Tellurium</td>
+        <td title="Iodine (53)" class="g5"><strong>53</strong><br />I<br />Iodine</td>
+        <td title="Xenon (54)" class="g3"><strong>54</strong><br />Xe<br />Xenon</td>
       </tr>
 
       <!-- Period 6 -->
       <tr>
         <th>Period 6</th>
-        <td title="Cesium (55)"><strong>55</strong><br/>Cs<br/>Cesium</td>
-        <td title="Barium (56)"><strong>56</strong><br/>Ba<br/>Barium</td>
-        <td><strong>57-71</strong><br/><br/><br/></td>
-        <td title="Hafnium (72)"><strong>72</strong><br/>Hf<br/>Hafnium</td>
-        <td title="Tantalum (73)"><strong>73</strong><br/>Ta<br/>Tantalum</td>
-        <td title="Tungsten (74)"><strong>74</strong><br/>W<br/>Tungsten</td>
-        <td title="Rhenium (75)"><strong>75</strong><br/>Re<br/>Rhenium</td>
-        <td title="Osmium (76)"><strong>76</strong><br/>Os<br/>Osmium</td>
-        <td title="Iridium (77)"><strong>77</strong><br/>Ir<br/>Iridium</td>
-        <td title="Platinum (78)"><strong>78</strong><br/>Pt<br/>Platinum</td>
-        <td title="Gold (79)"><strong>79</strong><br/>Au<br/>Gold</td>
-        <td title="Mercury (80)"><strong>80</strong><br/>Hg<br/>Mercury</td>
-        <td title="Thallium (81)"><strong>81</strong><br/>Tl<br/>Thallium</td>
-        <td title="Lead (82)"><strong>82</strong><br/>Pb<br/>Lead</td>
-        <td title="Bismuth (83)"><strong>83</strong><br/>Bi<br/>Bismuth</td>
-        <td title="Polonium (84)"><strong>84</strong><br/>Po<br/>Polonium</td>
-        <td title="Astatine (85)"><strong>85</strong><br/>At<br/>Astatine</td>
-        <td title="Radon (86)"><strong>86</strong><br/>Rn<br/>Radon</td>
+        <td title="Cesium (55)" class="g1"><strong>55</strong><br />Cs<br />Cesium</td>
+        <td title="Barium (56)" class="g2"><strong>56</strong><br />Ba<br />Barium</td>
+        <td class="g9"><strong>57-71</strong><br /><br /><br /></td>
+        <td title="Hafnium (72)" class="g4"><strong>72</strong><br />Hf<br />Hafnium</td>
+        <td title="Tantalum (73)" class="g4"><strong>73</strong><br />Ta<br />Tantalum</td>
+        <td title="Tungsten (74)" class="g4"><strong>74</strong><br />W<br />Tungsten</td>
+        <td title="Rhenium (75)" class="g4"><strong>75</strong><br />Re<br />Rhenium</td>
+        <td title="Osmium (76)" class="g4"><strong>76</strong><br />Os<br />Osmium</td>
+        <td title="Iridium (77)" class="g4"><strong>77</strong><br />Ir<br />Iridium</td>
+        <td title="Platinum (78)" class="g4"><strong>78</strong><br />Pt<br />Platinum</td>
+        <td title="Gold (79)" class="g4"><strong>79</strong><br />Au<br />Gold</td>
+        <td title="Mercury (80)" class="g7"><strong>80</strong><br />Hg<br />Mercury</td>
+        <td title="Thallium (81)" class="g7"><strong>81</strong><br />Tl<br />Thallium</td>
+        <td title="Lead (82)" class="g7"><strong>82</strong><br />Pb<br />Lead</td>
+        <td title="Bismuth (83)" class="g7"><strong>83</strong><br />Bi<br />Bismuth</td>
+        <td title="Polonium (84)" class="g7"><strong>84</strong><br />Po<br />Polonium</td>
+        <td title="Astatine (85)" class="g6"><strong>85</strong><br />At<br />Astatine</td>
+        <td title="Radon (86)" class="g3"><strong>86</strong><br />Rn<br />Radon</td>
       </tr>
 
       <!-- Period 7 -->
       <tr>
         <th>Period 7</th>
-        <td title="Francium (87)"><strong>87</strong><br/>Fr<br/>Francium</td>
-        <td title="Radium (88)"><strong>88</strong><br/>Ra<br/>Radium</td>
-        <td><strong>89-103</strong><br/><br/><br/></td>
-        <td title="Rutherfordium (104)"><strong>104</strong><br/>Rf<br/>Rutherfordium</td>
-        <td title="Dubnium (105)"><strong>105</strong><br/>Db<br/>Dubnium</td>
-        <td title="Seaborgium (106)"><strong>106</strong><br/>Sg<br/>Seaborgium</td>
-        <td title="Bohrium (107)"><strong>107</strong><br/>Bh<br/>Bohrium</td>
-        <td title="Hassium (108)"><strong>108</strong><br/>Hs<br/>Hassium</td>
-        <td title="Meitnerium (109)"><strong>109</strong><br/>Mt<br/>Meitnerium</td>
-        <td title="Darmstadtium (110)"><strong>110</strong><br/>Ds<br/>Darmstadtium</td>
-        <td title="Roentgenium (111)"><strong>111</strong><br/>Rg<br/>Roentgenium</td>
-        <td title="Copernicium (112)"><strong>112</strong><br/>Cn<br/>Copernicium</td>
-        <td title="Nihonium (113)"><strong>113</strong><br/>Nh<br/>Nihonium</td>
-        <td title="Flerovium (114)"><strong>114</strong><br/>Fl<br/>Flerovium</td>
-        <td title="Moscovium (115)"><strong>115</strong><br/>Mc<br/>Moscovium</td>
-        <td title="Livermorium (116)"><strong>116</strong><br/>Lv<br/>Livermorium</td>
-        <td title="Tennessine (117)"><strong>117</strong><br/>Ts<br/>Tennessine</td>
-        <td title="Oganesson (118)"><strong>118</strong><br/>Og<br/>Oganesson</td>
+        <td title="Francium (87)" class="g1"><strong>87</strong><br />Fr<br />Francium</td>
+        <td title="Radium (88)" class="g2"><strong>88</strong><br />Ra<br />Radium</td>
+        <td class="g10"><strong>89-103</strong><br /><br /><br /></td>
+        <td title="Rutherfordium (104)" class="g4"><strong>104</strong><br />Rf<br />Rutherfordium</td>
+        <td title="Dubnium (105)" class="g4"><strong>105</strong><br />Db<br />Dubnium</td>
+        <td title="Seaborgium (106)" class="g4"><strong>106</strong><br />Sg<br />Seaborgium</td>
+        <td title="Bohrium (107)" class="g4"><strong>107</strong><br />Bh<br />Bohrium</td>
+        <td title="Hassium (108)" class="g4"><strong>108</strong><br />Hs<br />Hassium</td>
+        <td title="Meitnerium (109)" class="g8"><strong>109</strong><br />Mt<br />Meitnerium</td>
+        <td title="Darmstadtium (110)" class="g8"><strong>110</strong><br />Ds<br />Darmstadtium</td>
+        <td title="Roentgenium (111)" class="g8"><strong>111</strong><br />Rg<br />Roentgenium</td>
+        <td title="Copernicium (112)" class="g7"><strong>112</strong><br />Cn<br />Copernicium</td>
+        <td title="Nihonium (113)" class="g8"><strong>113</strong><br />Nh<br />Nihonium</td>
+        <td title="Flerovium (114)" class="g8"><strong>114</strong><br />Fl<br />Flerovium</td>
+        <td title="Moscovium (115)" class="g8"><strong>115</strong><br />Mc<br />Moscovium</td>
+        <td title="Livermorium (116)" class="g8"><strong>116</strong><br />Lv<br />Livermorium</td>
+        <td title="Tennessine (117)" class="g8"><strong>117</strong><br />Ts<br />Tennessine</td>
+        <td title="Oganesson (118)" class="g8"><strong>118</strong><br />Og<br />Oganesson</td>
       </tr>
 
       <!-- Lanthanides Series row (displayed separately) -->
@@ -180,23 +175,23 @@
         <th>Lanthanides Series</th>
         <td colspan="18">
           <table border="1" cellpadding="5" cellspacing="0" style="margin-left: 200px;">
-            
+
             <tr>
-              <td title="Lanthanum (57)"><strong>57</strong><br/>La <br>Lanthanum</td>
-              <td title="Cerium (58)"><strong>58</strong><br/>Ce <br>Cerium</td>
-              <td title="Praseodymium (59)"><strong>59</strong><br/>Pr <br>Praseodymium</td>
-              <td title="Neodymium (60)"><strong>60</strong><br/>Nd <br>Neodymium</td>
-              <td title="Promethium (61)"><strong>61</strong><br/>Pm <br>Promethium</td>
-              <td title="Samarium (62)"><strong>62</strong><br/>Sm <br>Samarium</td>
-              <td title="Europium (63)"><strong>63</strong><br/>Eu <br>Europium</td>
-              <td title="Gadolinium (64)"><strong>64</strong><br/>Gd <br>Gadolinium</td>
-              <td title="Terbium (65)"><strong>65</strong><br/>Tb <br>Terbium</td>
-              <td title="Dysprosium (66)"><strong>66</strong><br/>Dy <br>Dysprosium</td>
-              <td title="Holmium (67)"><strong>67</strong><br/>Ho <br>Holmium</td>
-              <td title="Erbium (68)"><strong>68</strong><br/>Er <br>Erbium</td>
-              <td title="Thulium (69)"><strong>69</strong><br/>Tm <br>Thulium</td>
-              <td title="Ytterbium (70)"><strong>70</strong><br/>Yb <br>Ytterbium</td>
-              <td title="Lutetium (71)"><strong>71</strong><br/>Lu <br>Lutetium</td>
+              <td title="Lanthanum (57)" class="g9"><strong>57</strong><br />La <br>Lanthanum</td>
+              <td title="Cerium (58)" class="g9"><strong>58</strong><br />Ce <br>Cerium</td>
+              <td title="Praseodymium (59)" class="g9"><strong>59</strong><br />Pr <br>Praseodymium</td>
+              <td title="Neodymium (60)" class="g9"><strong>60</strong><br />Nd <br>Neodymium</td>
+              <td title="Promethium (61)" class="g9"><strong>61</strong><br />Pm <br>Promethium</td>
+              <td title="Samarium (62)" class="g9"><strong>62</strong><br />Sm <br>Samarium</td>
+              <td title="Europium (63)" class="g9"><strong>63</strong><br />Eu <br>Europium</td>
+              <td title="Gadolinium (64)" class="g9"><strong>64</strong><br />Gd <br>Gadolinium</td>
+              <td title="Terbium (65)" class="g9"><strong>65</strong><br />Tb <br>Terbium</td>
+              <td title="Dysprosium (66)" class="g9"><strong>66</strong><br />Dy <br>Dysprosium</td>
+              <td title="Holmium (67)" class="g9"><strong>67</strong><br />Ho <br>Holmium</td>
+              <td title="Erbium (68)" class="g9"><strong>68</strong><br />Er <br>Erbium</td>
+              <td title="Thulium (69)" class="g9"><strong>69</strong><br />Tm <br>Thulium</td>
+              <td title="Ytterbium (70)" class="g9"><strong>70</strong><br />Yb <br>Ytterbium</td>
+              <td title="Lutetium (71)" class="g9"><strong>71</strong><br />Lu <br>Lutetium</td>
             </tr>
           </table>
         </td>
@@ -207,28 +202,29 @@
         <th>Actinides Series</th>
         <td colspan="18">
           <table border="1" cellpadding="4" cellspacing="0" style="margin-left: 200px;">
-            
+
             <tr>
-              <td title="Actinium (89)"><strong>89</strong><br/>Ac <br>Actinium</td>
-              <td title="Thorium (90)"><strong>90</strong><br/>Th <br>Thorium</td>
-              <td title="Protactinium (91)"><strong>91</strong><br/>Pa <br>Protactinium</td>
-              <td title="Uranium (92)"><strong>92</strong><br/>U <br>Uranium</td>
-              <td title="Neptunium (93)"><strong>93</strong><br/>Np <br>Neptunium</td>
-              <td title="Plutonium (94)"><strong>94</strong><br/>Pu <br>Plutonium</td>
-              <td title="Americium (95)"><strong>95</strong><br/>Am <br>Americium</td>
-              <td title="Curium (96)"><strong>96</strong><br/>Cm <br>Curium</td>
-              <td title="Berkelium (97)"><strong>97</strong><br/>Bk <br>Berkelium</td>
-              <td title="Californium (98)"><strong>98</strong><br/>Cf <br>Californium</td>
-              <td title="Einsteinium (99)"><strong>99</strong><br/>Es <br>Einsteinium</td>
-              <td title="Fermium (100)"><strong>100</strong><br/>Fm <br>Fermium</td>
-              <td title="Mendelevium (101)"><strong>101</strong><br/>Md <br>Mendelevium</td>
-              <td title="Nobelium (102)"><strong>102</strong><br/>No <br>Nobelium</td>
-              <td title="Lawrencium (103)"><strong>103</strong><br/>Lr <br>Lawrencium</td>
+              <td title="Actinium (89)" class="g10"><strong>89</strong><br />Ac <br>Actinium</td>
+              <td title="Thorium (90)" class="g10"><strong>90</strong><br />Th <br>Thorium</td>
+              <td title="Protactinium (91)" class="g10"><strong>91</strong><br />Pa <br>Protactinium</td>
+              <td title="Uranium (92)" class="g10"><strong>92</strong><br />U <br>Uranium</td>
+              <td title="Neptunium (93)" class="g10"><strong>93</strong><br />Np <br>Neptunium</td>
+              <td title="Plutonium (94)" class="g10"><strong>94</strong><br />Pu <br>Plutonium</td>
+              <td title="Americium (95)" class="g10"><strong>95</strong><br />Am <br>Americium</td>
+              <td title="Curium (96)" class="g10"><strong>96</strong><br />Cm <br>Curium</td>
+              <td title="Berkelium (97)" class="g10"><strong>97</strong><br />Bk <br>Berkelium</td>
+              <td title="Californium (98)" class="g10"><strong>98</strong><br />Cf <br>Californium</td>
+              <td title="Einsteinium (99)" class="g10"><strong>99</strong><br />Es <br>Einsteinium</td>
+              <td title="Fermium (100)" class="g10"><strong>100</strong><br />Fm <br>Fermium</td>
+              <td title="Mendelevium (101)" class="g10"><strong>101</strong><br />Md <br>Mendelevium</td>
+              <td title="Nobelium (102)" class="g10"><strong>102</strong><br />No <br>Nobelium</td>
+              <td title="Lawrencium (103)" class="g10"><strong>103</strong><br />Lr <br>Lawrencium</td>
             </tr>
           </table>
         </td>
       </tr>
     </table>
-    </main>
+  </main>
 </body>
+
 </html>
